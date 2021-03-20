@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Black Ops One', cursive;
+}
+html{
+    scroll-behavior:smooth;
+    
+  }
+.contain{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+}
+.contain .section1 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-blend-mode: multiply;
+}
+.contain .section1
+{
+    background: #f00 url(images/gun.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.contain .section2 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-blend-mode: multiply;
+}
+.contain .section2
+{
+    background:rgb(0, 255, 0) url(images/FN-F2000.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.contain .section3 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-blend-mode: multiply;
+}
+.contain .section3
+{
+    background: #00f url(images/bhishma.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.contain .section4 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-blend-mode: multiply;
+}
+.contain .section4
+{
+    background: rgb(45, 56, 56) url(images/brahmos1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.content h1{
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+width: 14ch;
+}
+.content p{
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+max-width: 80%;
+}
+.content{
+    position:absolute;
+    top: 30%;
+    left: 10%;
+}
+@media only screen and (max-width:1070px){
+    .neonn{
+        right: 10%;
+    }
+}
+@media only screen and (max-width:470px){
+    .content h1{
+        width: 8ch;   
+    }
+    .neon{
+        right: 2%;
+    }
+    .neonn{
+        top: 185%;
+        right: 11%;
+    }
+}
+@media only screen and (max-width:280px){
+    .content{
+        top: 2%;
+        left: 5%;
+    }
+}
+.bak{
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    transition: all .5s ease;
+    font-family: 'Black Ops One', cursive;
+    margin-left: 43%;
+    
+}
+.bak:hover{
+    
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+.neon{
+    color: cyan;
+    border: cyan 2px solid;
+    border-radius: 10px;
+    font-size: 30px;
+    text-decoration: none;
+    letter-spacing: 6px;
+    transition: 1s;
+    margin: 0;
+    padding: 0;
+    position:absolute;
+    margin-top: 20%;
+    margin-left: 10%;
+    
+}
+.neon:hover{
+    color: cyan;
+    box-shadow: 0 1px 10px 0 cyan inset,0 1px 10px 0px cyan,
+                0 1px 10px 0 cyan inset,0 1px 10px 0px cyan;
+                text-shadow: 0px 0px 3px cyan,0px 0px 3px cyan;
+}
+.blur{
+    width: 100%;
+    height: 100vh;
+    filter: blur(5px);
+    position: fixed;
+}
+.nblur{
+    position: absolute;
+    top: 30%;
+    left: 6%;
+    border-radius: 20px;
+    transition: .5s linear;
+    transform:perspective(600px) rotateY(0deg);
+    color: rgb(0, 0, 0);
+    box-shadow: 0 1px 15px 0 rgb(0, 0, 0) inset,0 1px 15px 0px rgb(0, 0, 0),
+                0 1px 15px 0 rgb(0, 0, 0) inset,0 1px 15px 0px rgb(0, 0, 0);
+                text-shadow: 0px 0px 5px rgb(0, 0, 0),0px 0px 5px rgb(0, 0, 0);
+    
+}
+.nblur:hover{
+    transform:perspective(600px) rotateY(50deg);
+    color: rgb(0, 0, 0);
+    box-shadow: 0 5px 30px 0 rgb(0, 0, 0) inset,0 5px 30px 0px rgb(0, 0, 0),
+                0 5px 30px 0 rgb(0, 0, 0) inset,0 5px 30px 0px rgb(0, 0, 0);
+                text-shadow: 0px 0px 5px rgb(0, 0, 0),0px 0px 5px rgb(0, 0, 0);
+}
+.typingtext{
+    position: absolute;
+    top: 32%;
+    left: 35%;
+    font-size: 25px;
+    color: rgb(0, 255, 220); 
+} 
+.typingtext1{
+    position: absolute;
+    width: 0%;
+    height: 0%;
+}  
+
+.type p {
+    margin:0px;
+    white-space:nowrap;
+    overflow:hidden;
+    animation:typing 10s steps(59,end) forwards,
+              blink 1s infinite;
+  }
+  @keyframes typing {
+    0% { width:0% }
+    100% { width:100% }
+  }
+  @keyframes blink {
+    0%,100% {
+      border-right:2px solid transparent;
+    }
+    50% {
+      border-right:2px solid rgb(0, 255, 220);
+    }
+  }
+  @media only screen and (max-width:1199px){
+    .type p{
+        animation: none;
+    }
+    .typingtext{
+        top:74%;
+    left: 0;
+    }
+    .nblur{
+        top: 16%;
+    }
+    .neo{
+        left: -82%;
+    }
+}
+@media only screen and (max-width:800px){
+    .typingtext{
+    width: 0%;
+    height: 0%;
+    }
+    .typingtext1{
+        width:100%;
+        height: auto;
+        top: 80%;
+        color:rgb(202, 51, 24) ;
+        }
+    .nblur{
+        transform:perspective(600px) rotateY(50deg);
+    color: rgb(0, 0, 0);
+    box-shadow: 0 1px 15px 0 rgb(0, 0, 0) inset,0 1px 15px 0px rgb(0, 0, 0),
+                0 1px 15px 0 rgb(0, 0, 0) inset,0 1px 15px 0px rgb(0, 0, 0);
+                text-shadow: 0px 0px 5px rgb(0, 0, 0),0px 0px 5px rgb(0, 0, 0);
+    }
+}
+.neo{
+    color: rgb(0, 0, 0);
+    border: rgb(0, 0, 0) 2px solid;
+    border-radius: 10px;
+    font-size: 30px;
+    text-decoration: none;
+    letter-spacing: 6px;
+    transition: 1s;
+    padding: 0;
+    margin: 0;
+    position:absolute;
+    margin-top:3%;
+    margin-left:89%;
+    background-color: rgba(0, 0, 0, 0);
+}
+.neo:hover{
+    color: rgb(0, 0, 0);
+    box-shadow: 0 1px 7px 0 rgb(0, 0, 0) inset,0 1px 7px 0px rgb(0, 0, 0),
+                0 1px 7px 0 rgb(0, 0, 0) inset,0 1px 7px 0px rgb(0, 0, 0);
+    text-shadow: 0px 0px 1px rgb(0, 0, 0),0px 0px 1px rgb(0, 0, 0);
+            }
+            .neonn{
+                color: cyan;
+                border: cyan 2px solid;
+                border-radius: 10px;
+                font-size: 30px;
+                text-decoration: none;
+                letter-spacing: 6px;
+                transition: 1s;
+                margin: 0;
+                padding: 0;
+                position:absolute;
+                margin-top: 20%;
+                margin-left: 80%;
+                
+            }
+            .neonn:hover{
+                color: cyan;
+                box-shadow: 0 1px 10px 0 cyan inset,0 1px 10px 0px cyan,
+                            0 1px 10px 0 cyan inset,0 1px 10px 0px cyan;
+                            text-shadow: 0px 0px 3px cyan,0px 0px 3px cyan;
+            }
+            @media only screen and (max-width:1071px){
+                .neonn{
+                    margin-left: 400px;
+                }
+                }
+                
